@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action=" ">
+        <label for =" ">Emails</label>
+        <input type="text" class="email">
+        <button>submit</button>
+        <p class="error" style="color: red;"></p>
+    </form>
+    <div class="box">
+        <h1>Tittle</h1>
+        <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam optio quasi iste ipsa, ipsum voluptates facilis, voluptate similique explicabo dolor culpa sint. Officia, vero. Vel maiores perferendis voluptatibus expedita esse. Aut maiores sunt officia aperiam tenetur illo a praesentium!
+            <button id="click me">click me</button>
+        </p>
+    </div>
+    <script>
+        let button = document.querySelector("button");
+        button.addEventListener("click", function(e){
+            e.preventDefault();
+            let emailInput = document.querySelector("input.email");
+            let emailForm = document.querySelector("form");
+            if(emailInput.value == ""){
+                let errorField = document.querySelector("p.error");
+                errorField.textContent="email is required";
+            }
+                else{
+                 emailForm.submit();
+                }
+        });
+document.getElementById('click me').addEventListener('click', function(e){
+    e.stopPropagation();
+    alert('button clicked');
+});
+document.getElementById('content').addEventListener('click', function(){
+    alert('paragraph clicked');
+});
+document.removeEventListener("click",function(){
+    
+});
+    </script>
+</body>
+</html>

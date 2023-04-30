@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form  name="emailForm" action="">
+        <label for="">Email</label>
+        <input type="email" value="abc@gmail.com" name="email" id=""/>
+
+        <button>Submit</button>
+ 
+
+   <label>terms and condition</label>
+   <input type="checkbox" name="terms" id=""/>
+
+
+    </form>
+    <form action="">
+        <label for="">Name</label>
+        <input type="text"  value="cody" id=""/>
+
+        <button>Submit</button>
+    </form>
+    <script>
+    let forms=document.forms;
+    // let firstforms=forms[0];
+    let firstforms=document.forms.emailForm;
+
+    let secondforms=forms[1];
+    console.log(firstforms.email.value);
+    console.log(firstforms.terms.checked)
+    </script>
+</body>
+</html>

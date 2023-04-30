@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handling</title>
+</head>
+<body>
+    <h1 style="position: absolute;">Events</h1>
+    <script>
+        // listen of events
+        // click mouseover mousemove keyup keydown
+        let Events = document.querySelector('h1');
+        document.addEventListener('mouseover', function(event){
+            document.body.style.backgroundColor = "cyan";
+            console.log(event.x, event.y);
+        });
+
+        // mouseout
+        Events.addEventListener('keyup', function(e){
+            document.body.style.backgroundColor = "white";
+            console.log(e.keyCode);
+        });
+        
+
+
+    </script>
+</body>
+</html>

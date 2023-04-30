@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    padding: 40px;
+    background-color: rgb(180, 134, 101);
+    border-radius: 10px;
+
+}
+.brandlogo{
+    text-align:center;
+}
+.btn{
+    width: 100%;
+    padding: 5px 15px;
+    background-color: rgb(117, 15, 122);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "poppins";  
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:rgb(143, 152, 11);
+
+}
+.form-tittle{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.form-group{
+margin-bottom: 15px;
+}
+.form-group.error input{
+    border: 1px solid red;
+}
+.form-group.error .message{
+    color: red;
+}
+label,input{
+    display: block;
+}
+input{
+    width: 100%;
+    padding: 5px 15px;
+    font-family:"poppins";
+}
+
